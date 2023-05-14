@@ -10,8 +10,7 @@ tar -xf mysql-5.7.41-linux-glibc2.12-x86_64.tar.gz
 
 mv mysql-5.7.41-linux-glibc2.12-x86_64 $HOME/mysql57
 
-echo $build
-ls -al $build
+echo $build_dir
+ls -al $build_dir
 
-touch $build/.profile.d/mysql57.sh
-echo 'PATH=$PATH:/opt/mysql57/bin' > $build/.profile.d/mysql57.sh
+echo 'PATH=$PATH:/opt/mysql57/bin' > $build_dir/.profile.d/mysql57.sh
