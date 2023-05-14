@@ -8,7 +8,7 @@ cd /tmp
 wget "https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.41-linux-glibc2.12-x86_64.tar.gz"
 tar -xf mysql-5.7.41-linux-glibc2.12-x86_64.tar.gz
 
-mv mysql-5.7.41-linux-glibc2.12-x86_64 $HOME/mysql57
+mv mysql-5.7.41-linux-glibc2.12-x86_64 $build_dir/mysql57
 
 echo $build_dir
 ls -al $build_dir
