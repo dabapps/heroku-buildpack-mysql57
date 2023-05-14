@@ -6,10 +6,8 @@ build_dir=$1
 cd /tmp
 
 wget "https://cdn.mysql.com/archives/mysql-5.7/mysql-5.7.41-linux-glibc2.12-x86_64.tar.gz"
-tar -xf mysql-5.7.41-linux-glibc2.12-x86_64
+tar -xf mysql-5.7.41-linux-glibc2.12-x86_64.tar.gz
 
-mv mysql-5.7.41-linux-glibc2.12-x86_64 /opt/mysql57
-
-mkdir -p $build/.profile.d
+mv mysql-5.7.41-linux-glibc2.12-x86_64 $HOME/mysql57
 
 echo 'PATH=$PATH:/opt/mysql57/bin' > $build/.profile.d/mysql57.sh
