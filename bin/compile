@@ -15,4 +15,4 @@ ls -al $build_dir
 
 mkdir -p $build_dir/.profile.d
 touch $build_dir/.profile.d/mysql57.sh
-echo 'PATH=$PATH:/opt/mysql57/bin' > $build_dir/.profile.d/mysql57.sh
+echo 'PATH=/opt/mysql57/bin:$PATH' > $build_dir/.profile.d/mysql57.sh
